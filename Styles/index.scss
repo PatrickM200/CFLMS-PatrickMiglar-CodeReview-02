@@ -1,0 +1,281 @@
+/* Colors */
+$footerbg: #171717;
+$headbgc: #5C191A;
+$headnacbg: #1A1A1A;
+$fontcolor: #FFFFFF;
+$stitlebg: #DDDDDD;
+
+/*Fontsizes*/
+$fontb: 18pt;
+$fontm: 13pt;
+$fonts: 10pt;
+
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+
+    .fonts {
+        font-size: $fonts;
+    }
+
+    .fontm {
+        font-size: $fontm;
+    }
+
+    .fontb {
+        font-size: $fontb;
+    }
+
+}
+
+main {
+	
+	max-width: 1024px;
+	margin: 0 auto;
+		figure {
+			float: left;
+	}
+}
+div {
+	display: flex;
+	position: relative;
+	flex-wrap: wrap;
+	margin-top: 15px;
+	justify-content: left;
+	
+		a {
+			display: flex;
+    		margin: 0px;
+    		position: relative;
+    		text-decoration: none;
+    		margin: 0px 15px 0px 0px;
+
+    					figcaption {
+    						display: flex;
+        					background-color: $footerbg;
+        					position: absolute;
+        					bottom: 0;
+        					left: 0;
+        					height: 100px;
+        					padding: 0px 0px 0px 5px;
+        					justify-content: center;
+        					align-items: center;
+        					color: $stitlebg;
+        				
+  				}
+		}
+}
+.banners{
+	display: flex;
+	float: right;
+	object-fit: cover;
+}
+.titles {
+	display: flex;
+	width: 100%;
+	margin-top: -15px;
+}
+
+.figuretop {
+	width: 280px;
+	height: 250px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: $fontcolor;
+    margin-right: 20px;
+}
+
+.topnav {
+    background-color: $headnacbg;
+    text-decoration: none;
+    margin: 0;
+    width: 100%;
+}
+
+.botnav {
+    text-decoration: none
+}
+
+header {
+	background-color: $headbgc;
+	height: 150px;
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+    figure {
+   		 margin: 0px 15px;
+    } 
+
+}
+section {
+	display: flex;
+	margin: 0px 15px 0px 0px;
+	flex-wrap: wrap;
+	color: $fontcolor;
+
+}
+footer {
+    background-color: $footerbg;
+    color: $fontcolor;
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+
+    li {
+        display: inline;
+    }
+}
+
+.footertext {
+    text-align: center;
+    margin: 20px 0px 0px 0px;  
+}
+
+h2 {
+    background-color: $stitlebg;
+    font-size: $fontb;
+    color: $footerbg;
+    min-width: 100%;
+}
+
+.centerbanner {
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	width: 100%;
+	margin: 15px;
+}
+
+.footerimg {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.textright {
+	text-align: right;
+	margin-right: 15px;
+}
+
+.imgfirst {
+	width: 100%;
+}
+
+.sidebanner {
+	height: 350px;
+	margin: 15px 0px 0px 0px;
+
+
+}
+.title2 {
+	display: flex;
+	width: 870px;
+}
+.figurebottom {
+	width: 350px;
+	height: 350px;
+}
+.imgsec {
+	width: 100%
+}
+
+.divbottom {
+	margin: 10px;
+}
+.iframe {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 100px;
+}
+
+.logomobile {
+	display: none;
+}
+
+@media screen and (max-width:800px)
+{
+   .banner1
+    {
+        display: none;
+    }
+    .topnav
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+	.botnav {
+    	text-decoration: none;
+    	display: flex;
+        justify-content: center;
+        align-items: center;
+	}
+	.figurebottom {
+		width: 200px;
+		height: 200px;
+	}
+	.figuretop {
+		width: 200px;
+		height: 200px;
+		margin: 5px;
+	}
+	.footerimg {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+@media screen and (max-width:940px)
+{
+   .banner1
+    {
+        display: none;
+    }
+
+    .topnav
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+	.botnav {
+    	text-decoration: none;
+    	display: flex;
+        justify-content: center;
+        align-items: center;
+	}
+	.figurebottom {
+		width: 200px;
+		height: 200px;
+	}
+	.figuretop {
+		width: 200px;
+		height: 200px;
+		margin: 5px;
+	}
+	.footerimg {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+@media screen and (max-width:1023px)
+{
+   .banner1
+    {
+        display: none;
+    }
+    body div a figcaption {
+    	font-size: $fontm;
+
+    }
+    .logomobile {
+    	display: inline-block;
+    }
+}
